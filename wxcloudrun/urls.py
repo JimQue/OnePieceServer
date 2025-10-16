@@ -21,6 +21,9 @@ urlpatterns = (
     # 计数器接口
     url(r'^^api/count(/)?$', views.counter),
 
+    # 图生图接口
+    url(r'^^api/generate-image(/)?$', views.generate_image),
+
     # 获取主页
     url(r'(/)?$', views.index),
 )
